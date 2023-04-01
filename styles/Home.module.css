@@ -59,6 +59,7 @@
 
 .boxContent1 .right img {
   width: 100%;
+  height: auto;
 }
 
 .boxContent2 {
@@ -274,6 +275,7 @@
 
 .boxContent6 .right img {
   width: 100%;
+  height: auto;
 }
 
 .boxY {
