@@ -1,0 +1,171 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 100px;
+}
+
+.nav .option {
+  display: flex;
+  align-items: center;
+}
+
+.nav .option ul {
+  list-style-type: none;
+  display: flex;
+  gap: 40px;
+}
+
+.nav .option ul li {
+  font-family: "Conthrax", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 18px;
+  color: #ffffff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav .search {
+  display: flex;
+  align-items: center;
+  gap: 31px;
+}
+
+.nav .search > img {
+  cursor: pointer;
+}
+
+.nav .boxLogo {
+  display: flex;
+  align-items: center;
+}
+
+.nav .iconMoblie {
+  display: none;
+}
+
+.drawer {
+  background: #191e4f !important;
+}
+
+.drawer > div > div:first-child > div {
+  justify-content: flex-end !important;
+}
+
+.drawer > div > div:first-child svg {
+  fill: white;
+}
+
+.drawer > div > div:last-child {
+  text-align: center;
+}
+
+.optionMB ul {
+  list-style-type: none;
+}
+
+.optionMB ul li {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-family: "Conthrax", sans-serif;
+}
+
+.boxMedia {
+  margin-top: 65px;
+}
+
+.boxMedia img {
+  margin: 0 10px;
+}
+
+@media only screen and (max-width: 1280px) {
+  .nav {
+    padding: 22px 50px;
+  }
+
+  .nav .option ul {
+    gap: 20px;
+  }
+
+  .nav .option ul li {
+    font-size: 12px;
+  }
+
+  .nav .search {
+    gap: 12px;
+  }
+
+  .nav .search button {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav .option,
+  .nav .search > img {
+    display: none;
+  }
+
+  .nav {
+    padding: 22px 10px;
+  }
+
+  .nav > div {
+    width: 20%;
+  }
+
+  .nav .search {
+    justify-content: center;
+  }
+
+  .nav .iconMoblie {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .nav .iconMoblie:focus-visible {
+    outline: unset;
+  }
+
+  .nav .iconMoblie span {
+    padding: 5px;
+    border: 2px solid #1f223e;
+    border-radius: 2px;
+  }
+
+  .nav .iconMoblie span svg {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav > div {
+    width: 30%;
+  }
+
+  .nav .boxLogo img {
+    width: 100%;
+  }
+
+  .nav .search {
+    justify-content: flex-end;
+  }
+
+  .nav .search button {
+    padding: 8px 10px;
+  }
+
+  .nav .iconMoblie {
+    justify-content: flex-start;
+    padding-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .nav .search button {
+    font-size: 9px;
+  }
+}

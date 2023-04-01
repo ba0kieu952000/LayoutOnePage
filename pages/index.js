@@ -12,9 +12,10 @@ import {
   Testimonials,
 } from "@/data/fakeData";
 
+import Nav from "@/components/nav";
+
 import Logo from "@/public/svg/Logo.svg";
 import Dot from "@/public/svg/Dot.svg";
-import Search from "@/public/svg/Search.svg";
 import TestimonialsSvg from "@/public/svg/Testimonial.svg";
 import Address from "@/public/svg/Address.svg";
 import Phone from "@/public/svg/Phone.svg";
@@ -42,25 +43,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <nav className={styles.nav}>
-          <div className={styles.boxLogo}>
-            <Image src={Logo} alt="" width={160} height={38} />
-          </div>
-          <div className={styles.option}>
-            <ul>
-              <li>Home</li>
-              <li>Explore</li>
-              <li>About Us</li>
-              <li>Tokenomics</li>
-              <li>Roadmap</li>
-              <li>Contact</li>
-            </ul>
-          </div>
-          <div className={styles.search}>
-            <Image src={Search} alt="" width={18} height={18} />
-            <Button>Join Now</Button>
-          </div>
-        </nav>
+        <Nav />
 
         <div className={styles.boxContent1}>
           <div className={styles.left}>
@@ -106,6 +89,7 @@ export default function Home() {
               height={70}
             />
           ))}
+          <div>15+ more</div>
         </div>
 
         <div className={styles.boxContent5}>
@@ -125,6 +109,13 @@ export default function Home() {
                   <div className={styles.rule}></div>
                 </div>
               ))}
+              <Image
+                src={BANNER_2}
+                alt=""
+                width={462}
+                height={414}
+                className={styles.mobileBanner}
+              />
             </div>
           </div>
         </div>
@@ -315,6 +306,112 @@ export default function Home() {
                 <p>
                   Target to reach 100k Users, Governance launch, Upgrade the
                   platform to version 2.0 for more intelligent.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <Button className={styles.boxBtn}>View Full Road Map</Button>
+        </div>
+
+        <div className={styles.boxContent10MB}>
+          <div className={styles.boxTitle}>
+            <div className={styles.boxY}>
+              <span>Road Map</span>
+            </div>
+            <h1>ThreeB Timeline</h1>
+            <p>
+              This roadmap outlines our goals and where we want to take people
+              to the ThreeB universe.
+            </p>
+          </div>
+
+          <div className={styles.boxContent}>
+            <div className={styles.midd}>
+              <Image src={Dot} alt="" width={11} height={11} />
+              <div></div>
+              <Image src={Dot} alt="" width={11} height={11} />
+            </div>
+
+            <div className={styles.right}>
+              <div className={styles.card}>
+                <div className={styles.boxY}>
+                  <span>Late 2022 - Early 2023</span>
+                </div>
+                <div className={styles.connect}>
+                  <Image src={Dot} alt="" width={19} height={19} />
+                  <div></div>
+                </div>
+                <h2>Preparation</h2>
+                <div className={styles.rule}></div>
+                <p>
+                  Market Research, Ideas Verification, Team Forming, Graphic
+                  Design, Partnerships Onboard, Fund Raising – Strategic
+                  Investors.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <div className={styles.boxY}>
+                  <span>Q2 2023</span>
+                </div>
+                <div className={styles.connect}>
+                  <Image src={Dot} alt="" width={19} height={19} />
+                  <div></div>
+                </div>
+                <h2>Platform Official Launch</h2>
+                <div className={styles.rule}></div>
+                <p>
+                  ThreeB Platform - STO, Prediction, Bot Trading - Official
+                  Launch, Airdrop on Global Sites, Community Development, KOLs &
+                  VCs Onboard.
+                </p>
+              </div>
+
+              <div className={styles.card}>
+                <div className={styles.boxY}>
+                  <span>Q3 2023</span>
+                </div>
+                <div className={styles.connect}>
+                  <Image src={Dot} alt="" width={19} height={19} />
+                  <div></div>
+                </div>
+                <h2>Eco-system Official Launch</h2>
+                <div className={styles.rule}></div>
+                <p>
+                  Eco-system - NFT Marketplace, CEX, DEX - Official Launch,
+                  Token Lists On Tier-2 CEX, Token Buybacks Program, Reach 500k
+                  Users.
+                </p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.boxY}>
+                  <span>Q4 2023</span>
+                </div>
+                <div className={styles.connect}>
+                  <Image src={Dot} alt="" width={19} height={19} />
+                  <div></div>
+                </div>
+                <h2>Growth-hack Marketing</h2>
+                <div className={styles.rule}></div>
+                <p>
+                  Target to reach 100k Users, Governance launch, Upgrade the
+                  platform to version 2.0 for more intelligent.
+                </p>
+              </div>
+              <div className={styles.card}>
+                <div className={styles.boxY}>
+                  <span>More</span>
+                </div>
+                <div className={styles.connect}>
+                  <Image src={Dot} alt="" width={19} height={19} />
+                  <div></div>
+                </div>
+                <h2>Go Global</h2>
+                <div className={styles.rule}></div>
+                <p>
+                  Applied more AI Bots, created many modern algorithms, Token
+                  Lists On Tier-1 CEX & DEX, Target to reach more than 1M Users.
                 </p>
               </div>
             </div>
