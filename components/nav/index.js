@@ -28,6 +28,10 @@ const Nav = () => {
     <nav className={styles.nav}>
       <div className={styles.iconMoblie}>
         <MenuOutlined onClick={() => showDrawer()} />
+
+        <div className={styles.boxLogoMB}>
+          <Image src={Logo} alt="" width={160} height={38} />
+        </div>
       </div>
       <div className={styles.boxLogo}>
         <Image src={Logo} alt="" width={160} height={38} />

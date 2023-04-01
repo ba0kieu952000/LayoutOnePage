@@ -464,8 +464,7 @@
   display: none;
 }
 
-.boxContent10 .boxTitle,
-.boxContent10MB .boxTitle {
+.boxContent10 .boxTitle {
   text-align: center;
   margin-bottom: 40px;
 }
@@ -1005,11 +1004,6 @@
   .boxContent5 {
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 60px;
-  }
-
-  .boxContent6 {
-    margin-bottom: 60px;
   }
 
   .boxContent6 .left h1 {
@@ -1022,10 +1016,6 @@
   .boxContent7 {
     text-align: center;
     margin-bottom: 20px;
-  }
-
-  .boxContent8 {
-    margin-bottom: 60px;
   }
 
   .boxContent8 h1 {
@@ -1117,6 +1107,15 @@
     padding: 0 5%;
   }
 
+  .boxContent5,
+  .boxContent6,
+  .boxContent8,
+  .boxContent9,
+  .boxContent11,
+  .boxContent12 {
+    margin-bottom: 60px;
+  }
+
   .main {
     padding-bottom: 30px;
   }
@@ -1158,11 +1157,12 @@
   }
 
   .boxContent4 img {
-    width: 33%;
+    width: 26%;
+    height: auto;
   }
 
   .boxContent4 div {
-    width: 33%;
+    width: 26%;
     font-size: 22px;
     justify-content: center;
   }
@@ -1181,7 +1181,7 @@
 
   .boxContent6 {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 25px;
   }
 
   .boxContent6 .left,
@@ -1191,10 +1191,19 @@
 
   .boxContent6 .left p {
     width: 100%;
+    margin-bottom: 18px;
+  }
+
+  .boxContent7 p {
+    font-weight: 300;
+    font-size: 14px;
+    margin: 10px 0 35px;
   }
 
   .boxContent7 .boxSpeciality {
     flex-wrap: wrap;
+    row-gap: 30px;
+    padding-top: 30px;
   }
 
   .boxContent7 .boxSpeciality > div {
@@ -1220,13 +1229,20 @@
 
   .boxContent10MB {
     display: block;
+    margin-bottom: 60px;
   }
 
   .boxContent10MB .boxContent {
     display: flex;
     width: 100%;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+  }
+
+  .boxContent10MB .boxBtn {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 0;
   }
 
   .boxContent10MB .boxContent .right {
@@ -1265,6 +1281,10 @@
     transform: matrix(-1, 0, 0, 1, 0, 0);
   }
 
+  .boxContent11 .testimonials .item .avatar img {
+    height: auto;
+  }
+
   .footer {
     display: none;
   }
@@ -1297,6 +1317,7 @@
 
   .boxContent1 .left .boxBtn {
     margin: auto;
+    width: 175px;
   }
 
   .boxContent2 > div {
@@ -1313,13 +1334,20 @@
     width: 80%;
   }
 
+  .boxContent4 {
+    justify-content: space-around;
+  }
+
   .boxContent4 div {
-    font-size: 28px;
-    width: 50%;
+    font-size: 16px;
+    width: 40%;
+    padding: 0 20px;
   }
 
   .boxContent4 img {
-    width: 50%;
+    width: 40%;
+    height: auto;
+    padding: 0 20px;
   }
 
   .boxContent5 .info {
@@ -1356,6 +1384,7 @@
 
   .boxContent6 .left .boxBtn {
     margin: auto;
+    width: 180px;
   }
 
   .boxContent8 {
@@ -1363,6 +1392,13 @@
   }
 
   .boxContent9 .boxContent > div > .boxBtn {
+    margin: auto;
+    width: 150px;
+  }
+
+  .boxContent10 .boxBtn,
+  .boxContent10MB .boxBtn {
+    width: 215px;
     margin: auto;
   }
 
@@ -1376,11 +1412,34 @@
 
   .boxContent11 .testimonials {
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 60px;
   }
 
   .boxContent11 .testimonials .item {
     width: 100%;
+  }
+
+  .boxContent5,
+  .boxContent6,
+  .boxContent9,
+  .boxContent10MB,
+  .boxContent11,
+  .boxContent12 {
+    margin-bottom: 30px;
+  }
+
+  .boxContent10MB .boxTitle {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .midTitle .boxY {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .boxContent11 .testimonials {
+    margin-top: 90px;
   }
 
   .boxContent12 .boxContent {
@@ -1410,6 +1469,7 @@
 
   .boxContent12 .boxBtn {
     margin: auto;
+    width: 140px;
   }
 
   .boxContent13 .boxContent {
@@ -1429,6 +1489,7 @@
   .boxContent13 .boxContent .boxBtn {
     margin: auto;
     margin-bottom: 12px;
+    width: 130px;
   }
 
   .boxContent13 .boxContent .left h1 {

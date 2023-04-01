@@ -41,6 +41,10 @@
   align-items: center;
 }
 
+.nav .boxLogo img {
+  width: 100%;
+}
+
 .nav .iconMoblie {
   display: none;
 }
@@ -103,6 +107,7 @@
 
 @media only screen and (max-width: 992px) {
   .nav .option,
+  .nav .boxLogo,
   .nav .search > img {
     display: none;
   }
@@ -112,22 +117,33 @@
   }
 
   .nav > div {
-    width: 20%;
+    width: 30%;
   }
 
   .nav .search {
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 20px;
   }
 
   .nav .iconMoblie {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     cursor: pointer;
+    margin-left: 20px;
   }
 
   .nav .iconMoblie:focus-visible {
     outline: unset;
+  }
+
+  .nav .iconMoblie .boxLogoMB {
+    margin-left: 25px;
+  }
+
+  .nav .iconMoblie .boxLogoMB img {
+    width: 100%;
+    height: auto;
   }
 
   .nav .iconMoblie span {
@@ -143,7 +159,7 @@
 
 @media only screen and (max-width: 768px) {
   .nav > div {
-    width: 30%;
+    width: 50%;
   }
 
   .nav .boxLogo img {
