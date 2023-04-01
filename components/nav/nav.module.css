@@ -184,4 +184,8 @@
   .nav .search button {
     font-size: 9px;
   }
+
+  .nav .iconMoblie {
+    margin-left: 10px;
+  }
 }
